@@ -60,7 +60,6 @@ const Navigation = () => {
           }}
           ref={arrowRef}
           alt=""
-          className={styles.img}
           animate={{ rotate: isOpen ? 180 : 0 }}
           onClick={() => setIsOpen((prev) => !prev)}
         />
