@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../Fonts/arialnarrow.ttf");
+}
+
+@font-face {
+  font-family: "Bungee";
+  src: url("../Fonts/FT88-School.otf");
+}
+
+@font-face {
+  font-family: "Italic";
+  src: url("../Fonts/FT88-Italic.otf") format("truetype");
+}
+
+.nav {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.rechts {
+  font-weight: lighter;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  height: 3rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px;
+  width: 10%;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 8px 12px;
+      cursor: pointer;
+      &:hover {
+        background: #f0f0f0;
+      }
+    }
+  }
+}
+
+.links {
+  height: 3rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px;
+  margin-right: 45px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.head {
+  width: 100%;
+  margin-left: 5%;
+  padding: 0%;
+  font-family: "Helvetica";
+  color: black;
+}
+
+.img:hover {
+  transform: rotate(90deg);
+}

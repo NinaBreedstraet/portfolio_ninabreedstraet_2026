@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Avara";
+  src: url("../../Fonts/FT88-School.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../../Fonts/arialnarrow.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Italic";
+  src: url("../../Fonts/") format("truetype");
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.workT {
+  padding-top: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  width: 100%;
+  font-size: large;
+  text-align: left;
+  font-family: "Italic", serif;
+}

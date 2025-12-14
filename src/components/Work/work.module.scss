@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Avara";
+  src: url("../Fonts/FT88-School.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../Fonts/arialnarrow.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Italic";
+  src: url("../Fonts/FT88-Italic.otf") format("truetype");
+}
+
+.element {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.imagesContainer {
+  max-width: 100%;
+  margin: 5%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.imagesContainer video {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 2%;
+}
+
+.image:hover {
+  cursor: pointer;
+  scale: 0.95;
+}
+
+.image {
+  width: 40%;
+  margin: 0.5%;
+}
+
+.sjaal img {
+  background-color: red;
+}
+
+.imagesContainer .shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  cursor: pointer;
+
+  .image {
+    margin: 0%;
+  }
+}
+
+.content {
+  font-family: "Helvetica", sans-serif;
+  position: absolute;
+  border-radius: 25px;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2%;
+  bottom: 8%;
+  left: 3%;
+  height: max-content;
+  width: 70%;
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  filter: none;
+}
+
+.knopjeInfo {
+  border: none;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.knopjeInfo img.info {
+  width: 18px;
+  height: 18px;
+}
+
+.fullscreenImage {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 5%;
+  left: 10%;
+  right: 20%;
+  transform: translate(-50%, -50%) scale(1);
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  z-index: 101;
+  object-fit: contain;
+}
+
+.kruisje {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  z-index: 999;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.showKruisje {
+  visibility: visible;
+}
+
+.fullscreenImage:hover {
+  transform: none;
+  scale: 1;
+  cursor: default;
+}

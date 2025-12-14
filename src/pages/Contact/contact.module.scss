@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Avara";
+  src: url("../Fonts/FT88-School.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../Fonts/arialnarrow.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Italic";
+  src: url("../Fonts/FT88-Italic.otf") format("truetype");
+}
+
+.contactgegevens {
+  font-family: "Helvetica", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 13px;
+  width: 96%;
+  gap: 7%;
+  margin-left: 30px;
+  padding-top: 10%;
+}
+
+.contactgegevens p a {
+  text-decoration: underline;
+  margin-top: 10%;
+}

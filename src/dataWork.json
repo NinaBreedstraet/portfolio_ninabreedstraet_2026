@@ -1,0 +1,156 @@
+[
+  {
+    "title": "Rosas",
+    "img": [
+      "/Images/Rosas1.png",
+      "/Images/Rosas2.png",
+      "/Images/Parts1.png",
+      "/Images/Parts2.png"
+    ],
+    "video": [""],
+    "id": "styles.rosas",
+    "genre": "digital",
+    "content": "I was asked to create a campaign for the Summer Residencies 2025, organized by Rosas and P.A.R.T.S. It was a great honor to have thisas my first real paid assignment. They requested something simple, not too special, and in line with both of their styles. I was immediately inspired by their logo, which looks as if it was written in chalk. So I started experimenting with chalk and Illustrator!<br /><br /> I developed two styles: one in color, reflecting the style of P.A.R.T.S., and one in black and white for Rosas, which matches their aesthetic."
+  },
+  {
+    "title": "Sjaal",
+    "img": [
+      "/Images/IMG_0896.png",
+      "/Images/IMG_1989.png",
+      "/Images/IMG_3659.png"
+    ],
+    "video": [""],
+    "id": "sjaal",
+    "genre": "objects",
+    "content": "In my second year at Luca School of Arts, we were tasked with designing a football scarf using a limited set of materials, themed around a sport of our choice. After researching the materials, I decided to create a scarf inspired by the board game Go. <br /> <br /> The contrast between the grid of the board and the round playing stones influenced my design. I drew further inspiration from a computer version of Go that highlights the best moves with gradient colors. I used these gradient colors throughout the rest of the scarf. These colors allowed key elements—such as the repeating 'gogogogo' on the back and the white stone-like dots on the front—to stand out more clearly."
+  },
+  {
+    "title": "Plaat",
+    "img": [
+      "/Images/IMG_3652.png",
+      "/Images/LPbackcover.png",
+      "/Images/Vinyl.png"
+    ],
+    "video": [""],
+    "id": "styles.plaat",
+    "genre": "objects",
+    "content": "This assignment was from my first year at Luca School of Arts, where we were tasked with designing a vinyl cover for one of the albums from a provided list. I chose 'Music for Commercials' by Yasuaki Shimizu, an album originally created for Japanese TV commercials.<br /> <br /> For inspiration, I delved into vintage Japanese commercials, which are known for their vibrant and colourful aesthetic. During my research, I also discovered tiny smiley faces in Japanese signage, which was a fun addition to my design. Overall, designing this vinyl was a fun experience, full of creativity and exploration."
+  },
+  {
+    "title": "Stuk",
+    "img": [
+      "/Images/Stuk1.png",
+      "/Images/Stuk2.png",
+      "/Images/Stuk3.png",
+      "/Images/Stuk4.jpeg"
+    ],
+    "video": [""],
+    "id": "styles.stuk",
+    "genre": "digital",
+    "content": "As a volunteer at STUK, I got the chance to design a visual identity for STUK Blokt! Inspired by endlessly copied exams where the text and images slowly disappear, I created a poster and Instagram posts to capture that look."
+  },
+  {
+    "title": "Letters",
+    "img": ["/Images/IMG_5088.png", "/Images/IMG_5090.png"],
+    "video": ["/Images/Comp1.mp4"],
+    "id": "styles.letters",
+    "genre": "publications",
+    "content": "In my third year at Luca School of Arts, I had the opportunity to participate in an Erasmus exchange in Lyon, where I studied at ENSBA (École Nationale Supérieure des Beaux-Arts). During that semester, we were given an interesting assignment: to create a custom font inspired by the typefaces of old newspapers. We were provided with a selection to choose from, and I decided to work with the font from Le Meridional. <br /><br /> This was my first experience designing a typeface, which made the project particularly exciting for me. Upon returning to Belgium, I continued to refine and develop the font, making the entire process a rewarding journey. For the final presentation, I decided to showcase the font in a newspaper format, incorporating various headlines, paying homage to the historical roots of the original typeface."
+  },
+  {
+    "title": "Filmposter",
+    "img": ["/Images/IMG_3829.png"],
+    "video": [""],
+    "id": "styles.filmposter",
+    "genre": "publications",
+    "content": "In my second year at Luca School of Arts, we were assigned to create a concept for a fictional radio station and design a poster to represent it. I came up with 'Radio Scream', a station dedicated entirely to iconic screams from movies. For the poster, I featured several films known for their unforgettable scream scenes. Each title was accompanied by details such as the length of the scream and the name of the specific scene, emphasizing the power and drama of these moments."
+  },
+  {
+    "title": "Hekerock",
+    "img": ["/Images/eeeeen.png", "/Images/hekerock.jpeg"],
+    "video": [""],
+    "id": "styles.hekerock",
+    "genre": "publications",
+    "content": "This was one of my first real-world assignments! :) Chiro Hekeko holds an annual contest for the graphic design of their festival, and I decided to submit my design—and ended up winning. <br /> <br /> Hekeko stands for Heverlee, Kessel-Lo, and Korbeek-Lo, so I incorporated the geographical borders of these areas into the poster and added a 3D effect to make them stand out. Once I had the concept in place, I experimented with the layout, and that's how the final design came together!"
+  },
+  {
+    "title": "IntMotion",
+    "img": [""],
+    "video": ["/Images/Iteratie1.mp4", "/Images/Iteratie3.mp4"],
+    "id": "styles.intmotion",
+    "genre": "digital",
+    "content": "In 2023, I began studying Multimedia and Creative Technology at Erasmushogeschool Brussel. As part of a course called Interactive Motion, we learned to use TouchDesigner. The course culminated in two assignments, one of which involved creating a project inspired by another artist’s work. I chose Daydream by Valentine Maurice, an artist known for exploring the effects of light on mental health. In this particular project, she experiments with the interplay between light and water. For my project, I focused on recreating this interaction, experimenting with recreating light and water in TouchDesigner."
+  },
+  {
+    "title": "Canapé",
+    "img": ["/Images/VeelLiefs.png"],
+    "video": ["/Images/website.mov"],
+    "id": "styles.canape",
+    "genre": "digital",
+    "content": "In 2023, I joined Canapé Brussels, a space centered around community, art, and creating opportunities for each other. I created a graphic identity inspired by the friend books we used to fill out as kids. The style is designed to be easy to reproduce, allowing every team member to work with it using the elements I put together. <br /><br /> This year I had the opportunity to design and make a website for Canapé.",
+    "link": "https://canapecanape.be/"
+  },
+  {
+    "title": "Hoofden",
+    "img": [
+      "/Images/IMG_5072.png",
+      "/Images/IMG_5058.png",
+      "/Images/IMG_5076.png",
+      "/Images/IMG_5082.png",
+      "/Images/IMG_5066.png"
+    ],
+    "video": [""],
+    "id": "styles.hoofden",
+    "genre": "publications",
+    "content": " In my third year at Luca School of Arts, we kicked off the year with a major assignment: designing a book on graphic design. We were provided with interviews and essays from graphic designers to include in our book. For inspiration, we had to base our design on an existing book we liked. While browsing a thrift store, I came across a book about antiques. Its unique design featured large text and cut-out elements that intrigued me. I decided to incorporate these features into my project, experimenting with the interplay between bold typography and cut-out imagery. The result was a book design that combined these elements in a creative and engaging way."
+  },
+  {
+    "title": "Motion",
+    "img": [""],
+    "video": ["/Images/Opdracht_lyricsKleiner.mp4"],
+    "id": "styles.motion",
+    "genre": "digital",
+    "content": "In 2023, I started a new study, diving deeper into various programs and techniques. This clip is an example of one of my first experiments with After Effects. It's a lyric video where I applied the new skills I acquired throughout the year. <br /> <br /> The song featured is 'My Little Tony' by Bar Italia. Inspired by their album cover, which showcases stretched text, a color palette of gray, black, and yellow, and a grainy texture, I incorporated these elements into the video to create a cohesive and visually engaging piece."
+  },
+  {
+    "title": "Experience",
+    "img": [""],
+    "video": ["/Images/Experience_NinaBreedstaet_Clip2.mp4"],
+    "id": "styles.experience",
+    "genre": "digital",
+    "content": " In 2023, I began studying Multimedia and Creative Technology at Erasmushogeschool Brussel. In the Interactive Motion course, we explored TouchDesigner and were tasked with two significant assignments. For the second assignment, we created an interactive digital installation that delved into human interaction with technology.<br /> <br /> I wanted to challenge the notion that technology is a black-and-white world. Instead, I aimed to demonstrate its complexity by allowing viewers to influence what they see through hand and head movements. This clip showcases the interactive visual I developed to explore this concept."
+  },
+  {
+    "title": "Masters",
+    "img": [
+      "/Images/masters4Large.png",
+      "/Images/masters2Large.png",
+      "/Images/PHOTO14.png",
+      "/Images/Trouwen15Large.png"
+    ],
+    "video": [""],
+    "id": "styles.masters",
+    "genre": "publications",
+    "content": "This is my masters project, Juliet and Romeo. It was a research to the iconic story 'Romeo and Juliet'. In my masters thesis I wrote a story about Romeo and Juliet, in the story I researched and thought of how every element takes its place in today's society. When researching, I also looked at how this story was visualised, since there are a lot of versions of it. I layered them and created pictures where the romeos and juliets come out distorted."
+  },
+  {
+    "title": "Kaat",
+    "img": [""],
+    "video": ["/Images/KaatVanStralen_4.mp4"],
+    "id": "styles.kaat",
+    "genre": "digital",
+    "content": "I was asked by my dear friend and roommate Kaat Van Stralen to design het lyric video for 'Ik weet hoe het werkt'. It was inspired by the cover art, designed by Billie Marcelis."
+  },
+  {
+    "title": "Expert Lab 1",
+    "img": [""],
+    "video": [
+      "/Images/Project1_Promovideo_GimicRadio.mp4",
+      "/Images/Filmpje2.mp4",
+      "/Images/Project3_ExpertLab_NinaBreedstraet.mp4"
+    ],
+    "id": "styles.exlab",
+    "genre": "digital",
+    "content": "In my third year of Multimedia and Creative Technology, I took a course called Expert Lab, where we had the opportunity to work on portfolio projects. I chose to focus on motion design. I developed two hypothetical videos for Gimic Radio, as well as a TouchDesigner project for their live stream."
+  }
+]
