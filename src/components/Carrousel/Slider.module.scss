@@ -150,4 +150,55 @@ ul {
     object-fit: cover;
     border-radius: 0;
   }
+  
+  .splideWrapper {
+    height: 20rem;
+    margin-left: 0.5rem;
+  }
+  
+  .pijltjesContainer {
+    padding: 30px;
+    margin-left: -50px;
+  }
+  
+  .splide__arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    
+    &:last-of-type {
+      right: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .imgSprookje {
+    width: 90%;
+  }
+  
+  .imgSprookje img {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .splideWrapper {
+    height: 15rem;
+    margin-left: 0;
+  }
+  
+  .pijltjesContainer {
+    padding: 20px;
+    margin-left: 0;
+  }
+  
+  .splide__arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    
+    &:last-of-type {
+      right: 10px;
+    }
+  }
 }

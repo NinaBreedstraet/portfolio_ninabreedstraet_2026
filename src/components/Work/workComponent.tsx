@@ -1,6 +1,7 @@
 import styles from "./work.module.scss";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import ImageModal from "../ImageModal/ImageModal";
 
 type workContentProps = {
   img: string[];
@@ -36,23 +37,7 @@ function workElement({ img = [], content, id, video }: workContentProps) {
             />
           ))}
 
-        {selectedImage && (
-          <motion.div
-            className={styles.shade}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setSelectedImage(null)}
-          />
-        )}
-
-        {selectedImage && (
-          <img
-            src="/Images/kruisje2.png"
-            className={`${styles.kruisje} ${styles.showKruisje}`}
-            onClick={() => setSelectedImage(null)}
-          />
-        )}
+        
 
         {video.length > 0 &&
           video.filter(Boolean).map((src, index) => (
@@ -74,6 +59,11 @@ function workElement({ img = [], content, id, video }: workContentProps) {
               }}
             />
           ))}
+        <ImageModal
+          isOpen={!!selectedImage}
+          onClose={() => setSelectedImage(null)}
+          imageSrc={selectedImage || ""}
+        />
         <a onClick={() => setShowInfo(!showInfo)} className={styles.knopjeInfo}>
           <img className={styles.info} src="/Images/info.png" alt="info" />
         </a>

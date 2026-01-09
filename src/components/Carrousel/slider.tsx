@@ -1,8 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./Slider.module.scss";
 import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { VscArrowSmallRight, VscArrowSmallLeft } from "react-icons/vsc";
+import ImageModal from "../ImageModal/ImageModal";
 
 type SliderProps = {
   work: string[];
@@ -11,6 +12,7 @@ type SliderProps = {
 export const CarouselDefault = ({ work }: SliderProps) => {
   const splideRef = useRef<HTMLDivElement | null>(null);
   const splideInstance = useRef<Splide | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   useEffect(() => {
     if (!splideRef.current) return;
@@ -59,7 +61,12 @@ export const CarouselDefault = ({ work }: SliderProps) => {
               <li key={index} className="splide__slide">
                 <div className={styles.sprookjeDeelContainer}>
                   <div className={styles.imgSprookje}>
-                    <img src={item} alt={`Slide ${index}`} />
+                    <img 
+                      src={item} 
+                      alt={`Slide ${index}`} 
+                      onClick={() => setSelectedImage(item)}
+                      style={{ cursor: 'pointer' }}
+                    />
                   </div>
                 </div>
               </li>
@@ -67,6 +74,11 @@ export const CarouselDefault = ({ work }: SliderProps) => {
           </ul>
         </div>
       </div>
+      <ImageModal
+        isOpen={!!selectedImage}
+        onClose={() => setSelectedImage(null)}
+        imageSrc={selectedImage || ""}
+      />
     </div>
   );
 };

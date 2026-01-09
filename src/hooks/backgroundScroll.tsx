@@ -30,7 +30,7 @@ export default function ScrollBackground() {
         <motion.div
           style={{
             backgroundColor,
-            minHeight: "300vh",
+            minHeight: "800vh",
             width: "100%",
           }}
         >

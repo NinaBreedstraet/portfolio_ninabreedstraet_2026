@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import styles from "./Navigation.module.scss";
 import { Link } from "react-router-dom";
 import { useBlurOut } from "../../hooks/blurEffect";
-// import useArrowAnimation from "../../hooks/arrowAnimation";
 import DropdownMenu from "../Menu/menu.tsx";
 import { useState } from "react";
 import useArrowAnimation from "../../hooks/arrowAnimation.tsx";
@@ -26,41 +25,33 @@ const Navigation = () => {
         <motion.img
           src="/Images/stars.png"
           style={{
-            width: "4%",
-            right: "16%",
+            width: "15%",
             top: "30%",
-            position: "absolute",
           }}
           ref={arrowRef}
           alt=""
           animate={{ rotate: angle }}
         ></motion.img>
-
-        <Link to="/about">
+        <a href="/about" className={styles.about}>
           <motion.img
             src="/Images/user2.png"
             style={{
-              width: "3%",
-              right: "10%",
-              top: "40%",
-              position: "absolute",
+              width: "13%",
+              height: "auto",
               cursor: "pointer",
             }}
             alt=""
           ></motion.img>
-        </Link>
-
+        </a>
         <motion.img
           src="/Images/pixelArrow.png"
           style={{
-            width: "2%",
-            right: "5%",
-            position: "absolute",
+            width: "8%",
             cursor: "pointer",
           }}
           ref={arrowRef}
           alt=""
-          animate={{ rotate: isOpen ? 180 : 0 }}
+          animate={{ rotate: isOpen ? 0 : 180 }}
           onClick={() => setIsOpen((prev) => !prev)}
         />
         <DropdownMenu isVisible={isOpen} />

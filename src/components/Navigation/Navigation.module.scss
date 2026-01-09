@@ -17,36 +17,40 @@
   height: 10%;
   width: 100%;
   display: flex;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
   z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: transparent;
 }
 
 .rechts {
-  font-weight: lighter;
   display: flex;
   flex-direction: row;
-  gap: 15px;
   height: 3rem;
   align-items: center;
   justify-content: flex-end;
   padding: 30px;
-  width: 10%;
+  gap: 9%;
+  width: 30%;
+  a {
+    display: contents;
+  }
 }
 
 .dropdown {
-  position: absolute;
   top: 100%;
   left: 50%;
-  transform: translateX(-50%);
-  background: white;
   border: 1px solid #ddd;
-  border-radius: 8px;
   padding: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+
+  a {
+    display: relative;
+  }
 
   ul {
     list-style: none;
@@ -55,10 +59,9 @@
 
     li {
       padding: 8px 12px;
+      background-color: white;
+
       cursor: pointer;
-      &:hover {
-        background: #f0f0f0;
-      }
     }
   }
 }
@@ -86,4 +89,55 @@ a {
   padding: 0%;
   font-family: "Helvetica";
   color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    height: 8%;
+    min-height: 60px;
+  }
+
+  .rechts {
+    padding: 15px;
+    width: auto;
+    gap: 10px;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .links {
+    padding: 15px;
+    margin-right: 20px;
+    flex: 1;
+  }
+
+  .head {
+    font-size: 14px;
+    margin-left: 3%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav {
+    height: auto;
+    min-height: 50px;
+  }
+
+  .rechts {
+    padding: 10px;
+    width: auto;
+    gap: 5px;
+    flex: 1;
+  }
+
+  .links {
+    padding: 10px;
+    margin-right: 10px;
+    flex: 1;
+  }
+
+  .head {
+    font-size: 12px;
+    margin-left: 2%;
+  }
 }

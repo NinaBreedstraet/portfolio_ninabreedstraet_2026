@@ -15,7 +15,7 @@ export default function Home() {
     .filter(Boolean);
 
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Box className={styles.work}>
         <Masonry columns={{ xs: 1, sm: 2, md: 2 }} spacing={0}>
           {data
