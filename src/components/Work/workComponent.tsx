@@ -12,32 +12,31 @@ type workContentProps = {
 
 function workElement({ img = [], content, id, video }: workContentProps) {
   const [showInfo, setShowInfo] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
+    null,
+  );
+
+  const images = img.filter(Boolean);
 
   return (
     <div className={styles.element}>
       <div className={styles.imagesContainer}>
-        <img src="/Images/kruisje.png" alt="" className={styles.kruisje} />
-        {img.length > 0 &&
-          img.filter(Boolean).map((src, index) => (
-            <motion.img
-              key={index}
-              src={src}
-              className={`${styles.image} ${
-                selectedImage === src ? styles.fullscreenImage : ""
-              }`}
-              id={id}
-              initial={{ opacity: 0, scale: 0.8, y: 10, filter: "blur(20px)" }}
-              whileInView={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
-              transition={{
-                duration: 0.4,
-                delay: index * 0.2,
-              }}
-              onClick={() => setSelectedImage(src)}
-            />
-          ))}
-
-        
+        <img src="/Images/cross.png" alt="" className={styles.kruisje} />
+        {images.map((src, index) => (
+          <motion.img
+            key={index}
+            src={src}
+            className={styles.image}
+            id={id}
+            initial={{ opacity: 0, scale: 0.8, y: 10, filter: "blur(20px)" }}
+            whileInView={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
+            transition={{
+              duration: 0.4,
+              delay: index * 0.2,
+            }}
+            onClick={() => setSelectedImageIndex(index)}
+          />
+        ))}
 
         {video.length > 0 &&
           video.filter(Boolean).map((src, index) => (
@@ -60,9 +59,11 @@ function workElement({ img = [], content, id, video }: workContentProps) {
             />
           ))}
         <ImageModal
-          isOpen={!!selectedImage}
-          onClose={() => setSelectedImage(null)}
-          imageSrc={selectedImage || ""}
+          isOpen={selectedImageIndex !== null}
+          onClose={() => setSelectedImageIndex(null)}
+          images={images}
+          currentIndex={selectedImageIndex ?? 0}
+          onNavigate={setSelectedImageIndex}
         />
         <a onClick={() => setShowInfo(!showInfo)} className={styles.knopjeInfo}>
           <img className={styles.info} src="/Images/info.png" alt="info" />
@@ -75,7 +76,7 @@ function workElement({ img = [], content, id, video }: workContentProps) {
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.4 }}
           >
-            <p>{content}</p>
+            <p dangerouslySetInnerHTML={{ __html: content }}></p>
           </motion.div>
         )}
       </div>
