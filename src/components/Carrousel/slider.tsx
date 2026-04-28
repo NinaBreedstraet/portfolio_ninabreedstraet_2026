@@ -12,7 +12,9 @@ type SliderProps = {
 export const CarouselDefault = ({ work }: SliderProps) => {
   const splideRef = useRef<HTMLDivElement | null>(null);
   const splideInstance = useRef<Splide | null>(null);
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
+    null,
+  );
 
   useEffect(() => {
     if (!splideRef.current) return;
@@ -43,6 +45,8 @@ export const CarouselDefault = ({ work }: SliderProps) => {
   const handlePrev = () => splideInstance.current?.go("<");
   const handleNext = () => splideInstance.current?.go(">");
 
+  const images = work.filter(Boolean);
+
   return (
     <div ref={splideRef} className="splide">
       <div className={styles.splideWrapper}>
@@ -61,11 +65,11 @@ export const CarouselDefault = ({ work }: SliderProps) => {
               <li key={index} className="splide__slide">
                 <div className={styles.sprookjeDeelContainer}>
                   <div className={styles.imgSprookje}>
-                    <img 
-                      src={item} 
-                      alt={`Slide ${index}`} 
-                      onClick={() => setSelectedImage(item)}
-                      style={{ cursor: 'pointer' }}
+                    <img
+                      src={item}
+                      alt={`Slide ${index}`}
+                      onClick={() => setSelectedImageIndex(index)}
+                      style={{ cursor: "pointer" }}
                     />
                   </div>
                 </div>
@@ -75,9 +79,11 @@ export const CarouselDefault = ({ work }: SliderProps) => {
         </div>
       </div>
       <ImageModal
-        isOpen={!!selectedImage}
-        onClose={() => setSelectedImage(null)}
-        imageSrc={selectedImage || ""}
+        isOpen={selectedImageIndex !== null}
+        onClose={() => setSelectedImageIndex(null)}
+        images={images}
+        currentIndex={selectedImageIndex ?? 0}
+        onNavigate={setSelectedImageIndex}
       />
     </div>
   );
