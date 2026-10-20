@@ -13,6 +13,14 @@
     "content": "I was asked to create a campaign for the Summer Residencies 2025, organized by Rosas and P.A.R.T.S. It was a great honor to have thisas my first real paid assignment. They requested something simple, not too special, and in line with both of their styles. I was immediately inspired by their logo, which looks as if it was written in chalk. So I started experimenting with chalk and Illustrator!<br /><br /> I developed two styles: one in color, reflecting the style of P.A.R.T.S., and one in black and white for Rosas, which matches their aesthetic."
   },
   {
+    "title": "The Sound of the Belgian Underground 2027",
+    "img": [""],
+    "video": ["/Images/animatie45.mp4"],
+    "id": "sobu",
+    "genre": "digital",
+    "content": "After my internship and student job at Different Class, they asked me to design the announcement for their annual event, The Sound of the Belgian Underground. While researching, I came across an exhibition on the graphic design of Belgian nightlife in the 90s, where I discovered stretched, fluorescent typography. I decided to pay tribute to that style and its graphic language."
+  },
+  {
     "title": "Sjaal",
     "img": [
       "/Images/IMG_0896.png",
@@ -23,6 +31,14 @@
     "id": "sjaal",
     "genre": "objects",
     "content": "In my second year at Luca School of Arts, we were tasked with designing a football scarf using a limited set of materials, themed around a sport of our choice. After researching the materials, I decided to create a scarf inspired by the board game Go. <br /> <br /> The contrast between the grid of the board and the round playing stones influenced my design. I drew further inspiration from a computer version of Go that highlights the best moves with gradient colors. I used these gradient colors throughout the rest of the scarf. These colors allowed key elements—such as the repeating 'gogogogo' on the back and the white stone-like dots on the front—to stand out more clearly."
+  },
+  {
+    "title": "Studio Stoffels",
+    "img": ["/Images/LogoFinal-51.png"],
+    "video": ["/Images/Screen Recording 2026-10-20 at 13.58.51.mov"],
+    "id": "stoffels",
+    "genre": "digital",
+    "content": "I had the chance to create a logo and website for my friend, Leen Stoffels. Inspired by the way she sews and designs her clothing, I used the lines that run through her work as the basis for the logo."
   },
   {
     "title": "Plaat",
