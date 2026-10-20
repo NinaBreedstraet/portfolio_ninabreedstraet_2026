@@ -16,10 +16,11 @@ export default function Home() {
         <img className={styles.nina} src="/Images/roosLarge.png" alt="Roos" />
 
         <div className={styles.head} id={styles.introtekst}>
-          I'm a graphic, motion and digital designer who makes websites, books,
-          magazines, videos, scarfs, vinyl-covers, ... I'm 24 years old, have a
-          master of graphic design (Luca School of Arts, Ghent) and study
-          multimedia and creative technology.
+          Nina Breedstraet is a graphic designer working across motion, brand
+          identity and digital design, with a distinct eye for the cultural
+          field. Her work has found a home with names like Rosas & P.A.R.T.S.,
+          STUK Leuven, Different Class and Botanique, where she builds visual
+          stories that stick.
         </div>
 
         <div className={styles.introImages}>
